@@ -42,13 +42,14 @@ nav {
     display: inline-block;
     background-color: white;
     text-align: center;
-
 }
 
 nav ul {
     list-style: none;
     display: inline-block;
     text-align: center;
+    font-family: 'Telex', sans-serif;
+    font-size: 20px;
 }
 
 nav ul li {
@@ -62,8 +63,8 @@ nav ul li {
     text-decoration: none;
     text-transform: uppercase;
     background-color: white;
-
 }
+
 /*for adding a symbol to menu item with dropdown menu*/
 li > a:after { content: '»'; }
 li > a:only-child:after { content: ''; }
@@ -72,6 +73,8 @@ nav ul li a {
     color: black;
     text-decoration: none;
     display: inline-block;
+    font-family: 'Telex', sans-serif;
+    font-size: 20px;
 }
 
 nav ul li a:hover {

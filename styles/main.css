@@ -198,18 +198,10 @@ a.topbtn:hover {
     padding: 15px 15px 15px 15px;
 }
 
-.blog-link-container {
-    max-width: 850px;
-    position: relative;
-    margin: 0px auto;
-}
-
 .blog-post-link {
     float: left;
-    margin: 0px 10px 20px 10px;
+    margin: 0px 20px 20px 0px;
     width: 375px;
-    background-color: white;
-    padding: 15px;
 }
 
 .blog-post-link a {

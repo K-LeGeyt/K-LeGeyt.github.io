@@ -55,7 +55,7 @@
         </section>
         <section>
           <p>First up let's look at the <span class="bold-caps">relative position</span>. The term 'relative' actually relates to the elements original position in the flow of the web page or parent element and lets you move it from this by setting values. You would use this setting to move an element from where it would normally appear in the flow but its position is still affected by the elements surrounding it like a static element. This position also allows you to set a z-index value which means you can move it in front or or behind other elements.</p>
-          <h2>position: relative;</h2>
+          <h2><em>position: relative;</em></h2>
           <p>Below is an element with position value set to relative; is has been moved 50px to the left of its realtive position which would have been inline with the left edge of this text:</p>
           <div class="relative">
             This div element has position: relative;
@@ -71,10 +71,10 @@ div .relative {
               </code>
             </pre>
           </div>
-          <p class="small-note">*Please note the other styling of the div elements has been ommited from this code.</p>
+          <p class="small-note"><em>*Please note the other styling of the div elements has been ommited from this code.</em></p>
 
           <p><span class="bold-caps">Absolute position</span> means you remove the element from the flow and set its position based on the parent element or web page and it will not affect other elements surrounding it and they won't affect its positioning. Basically the element has a set position and all the other elements will ignore it. You can also set the z-index of this position.</p>
-          <h2>position: absolute;</h2>
+          <h2><em>position: absolute;</em></h2>
           <p>Below is an element with position value set to relative; is has been moved 50px to the left of its realtive position which would have been inline with the left edge of this text:</p>
           <div class="relative">This div element has position: relative;
             <div class="absolute">This div element has position: absolute;</div>
@@ -96,9 +96,9 @@ div .absolute {
               </code>
             </pre>
           </div>
-          <p class="small-note">*Please note the other styling of the div elements has been ommited from this code.</p>
+          <p class="small-note"><em>*Please note the other styling of the div elements has been ommited from this code.</em></p>
           <p>A <span class="bold-caps">fixed position</span> element is fixed to the web browser window or viewport. This means that as you scroll through the web page this element stays locked in place. Often used for a navigation bar you want to stay visible or a footer you want at the bottom of the page. The tricky thing with fixed position elements is that they can overlap other elements and you have to allow space to prevent this from happening if you don't like the layout.</p>
-          <h2>position: fixed;</h2>
+          <h2><em>position: fixed;</em></h2>
           <p>In the bottom corner of this webpage is a fixed element. You may have noticed it as you have been scrolling through this post.</p>
           <div class="fixed">
             This div element has position: fixed;
@@ -115,7 +115,7 @@ div .fixed {
               </code>
             </pre>
           </div>
-          <p class="small-note">*Please note the other styling of the div elements has been ommited from this code.</p>
+          <p class="small-note"><em>*Please note the other styling of the div elements has been ommited from this code.</em></p>
           <p><span class="bold-caps">Sticky position</span> is a combination of both a static position and a fixed position. Often the element will have a parent element with another element above it and as you scroll down the previous element disappears and the sticky element then gets stuck in a fixed position. You often see it used for navigation which has a header above. It is important to note that this is an experimental value which means that is is not supported by all the major browsers.</p>
           <p>The position value doesn't cascade (not inherited from the parent element) so the <span class="bold-caps">inherit position</span> value forces the value to be inherited from the parent.</p>
           <p>And that is all I have on using the positioning values in CSS to move elements around the page. If you are looking for some more technical resources you can check out the following websites which helped to teach me about these values:</p>

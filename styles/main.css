@@ -122,11 +122,23 @@ h2 {
 }
 
 h3 {
+    font-family: 'Fira Sans', sans-serif;
+    font-size: 25px;
+}
+
+h4 {
+    font-family: 'Cormorant', cursive;
+    font-style: italic;
+    font-size: 28px;
+}
+
+h5 {
     font-family: 'Telex', sans-serif;
-    font-size: 16px;
-    font-weight: bolder;
+    font-size: 14px;
+    font-weight: bold;
     margin-top: 0.2em;
 }
+
 p {
     font-family: 'Telex', sans-serif;
     font-size: 16px;
@@ -168,9 +180,6 @@ a.topbtn:hover {
     text-decoration: none;
 }
 
-section {
-    margin-top: 20px;
-}
 .page-container {
     min-height: 100%;
 }
@@ -180,6 +189,36 @@ section {
     margin: 20px auto;
     background-color: white;
     padding: 15px 15px 15px 15px;
+}
+
+.blog-link-container {
+    max-width: 850px;
+    position: relative;
+    margin: 0px auto;
+}
+
+.blog-post-link {
+    float: left;
+    margin: 0px 10px 20px 10px;
+    width: 375px;
+    background-color: white;
+    padding: 15px;
+}
+
+.blog-post-link a {
+    text-decoration: none;
+    color: black;
+}
+
+.blog-post-link a:hover {
+    text-decoration: none;
+    color: gray;
+    opacity: 0.5;
+}
+
+.blog-post-link img {
+    width: 100%;
+    margin-bottom: 1em;
 }
 
 .gallery-container {
@@ -201,6 +240,7 @@ section {
     text-transform: uppercase;
 }
 
+/* CSS Positioning blog post specific styling*/
 .relative {
     position: relative;
     left: 50px;

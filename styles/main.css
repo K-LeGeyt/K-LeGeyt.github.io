@@ -139,6 +139,13 @@ h5 {
     margin-top: 0.2em;
 }
 
+h5#byline {
+    font-family: 'Telex', sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    margin-top: 0.2em;
+}
+
 p {
     font-family: 'Telex', sans-serif;
     font-size: 16px;

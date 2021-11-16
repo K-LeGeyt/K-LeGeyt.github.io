@@ -34,6 +34,12 @@ header {
     z-index: 1;
 }
 
+@media screen and (max-width: 600px) {
+    #intro-image {
+      display: none;
+    }
+  }
+
 /* Navigation styling */
 nav {
     margin: 0 auto;
@@ -206,13 +212,30 @@ a.topbtn:hover {
     margin: 0px auto;
 }
 
+@media screen and (max-width: 600px) {
+    .blog-link-container {
+      width: 100%;
+      position:relative;
+      margin: 0 auto;
+    }
+  }
+
 .blog-post-link {
     float: left;
     margin: 0px 10px 20px 10px;
-    width: 375px;
+    max-width: 375px;
     background-color: white;
     padding: 15px;
 }
+
+@media screen and (max-width: 600px) {
+    .blog-post-link {
+        float: none;
+        margin: 0px 0px 20px 0px;
+        width: 100%;
+        background-color: white;
+    }
+  }
 
 .blog-post-link a {
     text-decoration: none;
@@ -255,6 +278,7 @@ figure {
 }
     
 figure img {
+    width: 100%;
     max-width: 200px;
     height: auto;
     margin: 5px;
@@ -324,7 +348,6 @@ figcaption {
 
 #desk-img {
     width: 100%;
-    height: auto;
     max-width: 400px;
     height: auto;
 }

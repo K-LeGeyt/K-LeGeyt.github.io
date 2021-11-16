@@ -159,6 +159,7 @@ body ul.external-link {
     margin-bottom: 2em;
 }
 
+body a,
 body li a {
     font-family: 'Telex', sans-serif;
     font-size: 16px;
@@ -166,6 +167,7 @@ body li a {
     text-decoration: none;
 }
 
+body a:hover,
 body li a:hover {
     color: hotpink;
 }
@@ -239,7 +241,29 @@ a.topbtn:hover {
 
 .blog-post-gallery img {
     width: 180px;
-    height: auto:
+    height: auto;
+}
+
+.fig-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+figure {
+    display: inline-block;
+}
+    
+figure img {
+    max-width: 200px;
+    height: auto;
+    margin: 5px;
+}
+
+figcaption {
+    font-family: 'Telex', sans-serif;
+    font-size: 10px;
+    text-align: center;
 }
 
 .bold-caps {
@@ -298,6 +322,12 @@ a.topbtn:hover {
       margin-bottom: 30px;
   }
 
+#desk-img {
+    width: 100%;
+    height: auto;
+    max-width: 400px;
+    height: auto;
+}
 
 /* Footer Styling */
 footer {

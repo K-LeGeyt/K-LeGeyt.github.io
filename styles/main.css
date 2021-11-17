@@ -352,6 +352,14 @@ figcaption {
     height: auto;
 }
 
+#top-img {
+    width: 100%;
+    height: auto;
+    margin-top: 20px;
+}
+
+}
+
 /* Footer Styling */
 footer {
     color: black;

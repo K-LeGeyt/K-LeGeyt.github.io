@@ -212,7 +212,7 @@ a.topbtn:hover {
     margin: 0px auto;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 800px) {
     .blog-link-container {
       width: 100%;
       position:relative;
@@ -227,6 +227,16 @@ a.topbtn:hover {
     background-color: white;
     padding: 15px;
 }
+
+
+@media screen and (max-width: 800px) {
+    .blog-post-link {
+        float: none;
+        margin: 0px 0px 20px 0px;
+        width: 100%;
+        background-color: white;
+    }
+  }
 
 @media screen and (max-width: 600px) {
     .blog-post-link {
@@ -254,7 +264,10 @@ a.topbtn:hover {
 }
 
 .gallery-container {
-    display: inline-block;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+
 }
 
 .blog-post-gallery {

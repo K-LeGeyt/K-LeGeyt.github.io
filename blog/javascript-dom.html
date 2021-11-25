@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Blog | JavaScript & the DOM</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@1,600&family=Fira+Sans:wght@600&family=Telex&display=swap" rel="stylesheet">
+    <link href="../styles/main.css" rel="stylesheet" type="text/css">
+  </head>
+  <body>
+    <a name="top"></a>
+    <div class="page-container">
+      <header>
+        <h1 id="header-heading">blog: JavaScript & the DOM</h1>
+      </header>
+      <nav>
+        <ul>
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="#">Blog</a>
+            <ul class="dropdown">
+              <li><a href="blog-css-positioning.html">CSS Positioning</a></li>
+              <li><a href="identity-values.html">Identity & Values</a></li>
+              <li><a href="learning-plan.html">Learning Plan</a></li>
+              <li><a href="emotional-intelligence.html">Emotional Intelligence</a></li>
+              <li><a href="javascript-dom.html">JavaScript & the DOM</a></li>
+            </ul>
+          </li>
+          <!--Hide until there is content 
+          <li><a href="#">Projects</a></li> -->
+        </ul>
+      </nav>
+      <div class="main-container">
+        <section>
+          <h1>HTML, CSS, Javascript and the DOM</h1>
+          <h2><em>How do the languages of the web work together?</em></h2>
+          <h5>25 November 2021</h5>
+    
+          <p><strong>HTML, CSS and JavaScript - languages of the web.</strong>
+            <br>
+                Just how do HTML and CSS work together to make a document we can view on a web browser or through an app. If we think of the human body and which has the basic structure of a skeleton with muscles and organs attached, this is what the Hyper Text Markup language or HTML is of a web document. It provides all the raw data or bones of the information to be displayed. 
+            </p>
+            <p>CSS (Cascading Style Sheets) then controls what that data looks like, if we go back to the human body analogy, the CSS would control the hair & eye colour, the clothes being worn and any make-up enhancing the features.
+            </p>
+            <p>If we want to go one step further and bring JavaScript into this analogy we could think of it as the brain controlling the central nervous system which tells us how to move and interact with the world around us.
+            </p> 
+            <div class="fig-container">
+                <figure>
+                    <img src="../images/js-fundamentals/human-body-js-analogy.png" alt="graphc showing cartoon skeleton, person and central nervous system" id="js-blog-img">
+                    <figcaption>Analogy of the human body in relation to html, CSS and JavaScript.</figcaption>
+                </figure>
+            </div>
+            <p><strong>The DOM - connecting everything together.
+            </strong>
+            <br>
+                The Document Object Model (DOM) is a programming interface which is language neutral and allows the CSS & JavaScript languages to access and interact with the HTML language. Put more simply it is the glue that holds them all together. The DOM is a bridge between the documents allowing the JavaScript to manipulate the elements in the HTML but also sending information back to the JavaScript document when the user interacts with elements so it can change the elements in response. A two way bridge all happening at lightening fast speed where things happen on either side in response to what is coming over the bridge and going back.
+            </p>
+            <p>
+                To be able to view a webpage on the internet we first need to access it through a browser window and it is the browser that employs the DOM to provide the JavaScript with the means to do this. You can also access the DOM of a web document using DevTools in you browser. This allows web developers to manipulate the html with CSS and JavaScript within the browser. Web developers can use this to help with de-bugging any issues with style or interactivity they are having and getting an immediate visual feedback of the change they have made.
+
+            </p>
+            <h4><em>JavaScript fundamentals.</em></h4>
+            <p><strong>Control flow and loops</strong>
+            <br>
+                The control flow is the order with which a computer or device runs through a script which is from the first line to the last line or more simply start to finish. This flow can be interrupted by loops inside the script which require a process to be repeated until a condition is satisfied. If we look at the process of making a cup of tea the flow of control would be get cup, add tea bag then hot water however if you prefer your tea with milk and sugar you would need to add a loop after adding these items where you stir. You might just stir 4 times in order to mix in the milk or you might need to stir until the sugar is dissolved. These repetitive actions work similarly to loops in a script.
+            </p>
+            <div class="fig-container">
+                <figure class="gif-fig">
+                    <img src="../images/js-fundamentals/making-tea.gif" alt="clip of tea into pot then hot water being poured" class="gif-img">
+                    <figcaption>Making tea - flow. <a href="https://giphy.com/gifs/tea-pot-making-mGP1Av3jQ9VKBPa9dF" target="_blank">via GIPHY</a></figcaption>
+                </figure>
+                <figure class="gif-fig">
+                    <img src="../images/js-fundamentals/stiring-sugar.gif" alt="clip of spoon stiring in a cup" class="gif-img">
+                    <figcaption>Stiring in milk & sugar - loop. <a href="https://giphy.com/gifs/tea-cha-banai-xdlWNkDQqg8AMHWfSL" target="_blank">via GIPHY</a></figcaption>
+                </figure>
+              </div>
+            <p><strong>The difference between accessing data from arrays and objects.</strong>
+            <br>
+                Objects and arrays are both ways to store collections of data in Javascript. Objects are used to represent a thing that has a set of characteristics. They can be used to store details about a person, a book, a movie or anything else that can be described with a category and a value. Arrays are a way to store a list of multiple items. They are most useful for ordered collections where items need to access by a numerical position on a list like songs on a playlist.
+            </p>
+            <p>
+                Objects store properties that consist of a key and a value. To access the value of the property you need to use the key.    
+            </p>
+            <p>Below we have the object variable called bookData.</p>
+            <div class="display-code">
+                <pre>
+                  <code>
+const bookData = {
+  title: 'Harry Potter and the Prisoner of Azkaban',
+  author: 'J K Rowling',
+  isbn: 9780545582933,
+  binding: 'Paperback'
+}
+                  </code>
+                </pre>
+              </div>
+            <p>To access the title of the book we need to call the bookDataObject and the key.</p>
+            <div class="display-code">
+                <pre>
+                  <code>
+console.log(bookData.title)
+                  </code>
+                </pre>
+              </div>
+            <p>This displays: Harry Potter and the Prisoner of Azkaban</p>
+            <p>Since arrays are list-like objects you can only access the values stored in them by their place in the list. Arrays use a zero-based indexing which means the first item in the array has an index of 0.
+            </p>
+            <p>Below we have an array which lists first, second and third.</p>
+            <div class="display-code">
+                <pre>
+                  <code>
+let placeValue = ['first', 'second', 'third']
+                  </code>
+                </pre>
+              </div>
+              <p>To access the first value we call it by the index number which starts at zero.</p>
+                <div class="display-code">
+                    <pre>
+                      <code>
+console.log(placeValue[0])
+                      </code>
+                    </pre>
+                  </div>
+            <p>This displays: first</p> 
+            <p>Arrays can be made up of key-value pairs, nested arrays and a mix of datatypes but it still all comes back to the zero based indexing system in order to access them.</p>
+            <p><strong>Functions - what are they and why are they so useful?</strong>
+            <br>
+            Functions are blocks of code designed to perform a specific task when they are called to do so. They can be reused so you only have to create the function once and then you can use it multiple times putting in different arguments to get different results. They also increase the readability of code as you can decipher what the function is doing. 
+            </p>
+            <p>Below is a function that has been written to greet someone by name.</p>
+            <div class="display-code">
+                <pre>
+                  <code>
+function greet(name) {
+    console.log("Hello " + name + "!")
+}
+                  </code>
+                </pre>
+              </div>
+              <p>If we assign a value to the 'name' variable and call the function it will say 'Hello' plus the 'name' and put an exclamation mark on the end.</p>
+              <div class="display-code">
+                <pre>
+                  <code>
+let name = prompt("Enter a name: ")
+greet(name)
+                  </code>
+                </pre>
+              </div>
+                <p>If I enter the name: Krissy
+                  <br>
+                  This will display: Hello Krissy!</p>
+        </section>
+        <section>
+          <div class="fig-container">
+            <figure>
+              <img src="../images/js-fundamentals/js-close-up-image-programer-working.jpg" alt="web developer working at desk" id="js-dev-img">
+              <figcaption><a href='https://www.freepik.com/photos/technology'>Technology photo created by pressfoto - www.freepik.com</a><br><a href='https://www.freepik.com/photos/computer'>Computer photo on home page created by lucabravo - www.freepik.com</a></figcaption>
+            </figure>
+          </div>
+          <br>
+        </section>
+        <a href="#top" class="top-btn">^Back to Top^</a>  
+      </div>
+
+
+      <footer>
+        <p class="footer-text">Copyright © 2021 Krissy Le Geyt</p>
+      </footer>
+    
+    </div>
+  </body>
+</html>

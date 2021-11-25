@@ -270,7 +270,6 @@ a.topbtn:hover {
 .fig-container {
     display: flex;
     justify-content: center;
-    align-items: center;
 }
 
 figure {
@@ -284,7 +283,17 @@ figure img {
     margin: 5px;
 }
 
-figcaption {
+.gif-fig {
+    margin: 5px;
+}
+
+.gif-img {
+    height: 158px;
+    width: auto;
+    max-width: 100%;
+}
+
+figcaption, figcaption a {
     font-family: 'Telex', sans-serif;
     font-size: 10px;
     text-align: center;
@@ -335,8 +344,11 @@ figcaption {
     font-family: Courier, serif;
     color: white;
     margin-bottom: 10px;
-    width:50%;
+    width: fit-content;
+    max-width: 90%;
+    overflow: scroll;
     padding-left: 15px;
+    padding-right: 15px;
     background-color: black;
 }
 
@@ -352,6 +364,12 @@ figcaption {
     height: auto;
 }
 
+#js-dev-img {
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+}
+
 #top-img {
     width: 100%;
     max-width: 800px;
@@ -359,6 +377,11 @@ figcaption {
     margin-top: 20px;
 }
 
+#js-blog-img {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+}
 
 /* Footer Styling */
 footer {

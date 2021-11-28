@@ -394,6 +394,20 @@ figcaption, figcaption a {
     height: auto;
 }
 
+#brain-img {
+    width: 100%;
+    max-width: 800px;
+    height: auto;
+    margin-top: 20px;
+}
+
+#mindset-img {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    margin-top: 20px;
+}
+
 /* Footer Styling */
 footer {
     color: black;

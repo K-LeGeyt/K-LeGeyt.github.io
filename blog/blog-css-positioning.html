@@ -1,91 +1,109 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <title>Blog | CSS Positioning</title>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">    
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@1,600&family=Fira+Sans:wght@600&family=Telex&display=swap" rel="stylesheet">
-    <link href="../styles/main.css" rel="stylesheet" type="text/css">
-  </head>
-  <body>
-    <a name="top"></a>
-    <div class="page-container">
-      <header>
-        <h1 id="header-heading">blog: CSS Positioning</h1>
-      </header>
-      <nav>
-        <ul>
-          <li><a href="../index.html">Home</a></li>
-          <li><a href="#">Blog</a>
-            <ul class="dropdown">
-              <li><a href="blog-css-positioning.html">CSS Positioning</a></li>
-              <li><a href="identity-values.html">Identity & Values</a></li>
-              <li><a href="learning-plan.html">Learning Plan</a></li>
-              <li><a href="emotional-intelligence.html">Emotional Intelligence</a></li>
-              <li><a href="javascript-dom.html">JavaScript & the DOM</a></li>
-              <li><a href="neuroplasticity.html">Neuroplasticity & Mindset</a></li>
-            </ul>
-          </li>
-          <!--Hide until there is content 
-          <li><a href="#">Projects</a></li> -->
-        </ul>
-      </nav>
-      <div class="main-container">
-        <section>
-          <h1>CSS positioning - what's the difference?</h1>
-          <h2><em>Relative, absolute and fixed positioning.</em></h2>
-          <h5>15 November 2021</h5>
-    
-          <p>When setting the position of an html element, class or id in CSS you are telling the browser how to place that item visually on the web page. There are six values that the position property can have: static (default), relative, absolute, fixed, sticky and inherit. The static value is the default position for an element and will keep it in the normal flow of the page, any further settings of position added in CSS will have no effect. Often when creating a web page you want to place an element in a specific position or have it move within a responsive web page in a relative position, this is when the position value needs to be set.</p>
-          <p>It is important to note that setting position usually relates to the parent container of the element you are positioning. Only in the case of fixed positioning is the position related to viewport or the browser window. This means you can set the position of a parent element (outer container) as relative and then set the position of the child element (inside the container) to absolute based on the relative position of the parent element. You could think of these element containers a bit like Russian nesting dolls where you have dolls of decreasing size placed one inside another. You could also have several dolls next to each other placed inside a toy box. In this example the toy box then becomes the parent container. The parent container needs to have a set position other than static for the absolute value to not use the page as the container. Confused yet? I am so let's see if we can unpack this...</p>
-          <div class="gallery-container">
-            <div class="blog-post-gallery">
-              <img src="../images/css-positioning/css-static-position-diagram.png" alt="diagram of static position in css">
-            </div>
-            <div class="blog-post-gallery">
-              <img src="../images/css-positioning/css-relative-position-diagram.png" alt="diagram of relative position in css">
-            </div>
-            <div class="blog-post-gallery">
-              <img src="../images/css-positioning/css-absolute-position-diagram.png" alt="diagram of absolute position in css">
-            </div>
-            <div class="blog-post-gallery">
-              <img src="../images/css-positioning/css-fixed-position-diagram.png" alt="diagram of fixed position in css">
-            </div>
+<head>
+  <title>Blog | CSS Positioning</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">    
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@1,600&family=Fira+Sans:wght@600&family=Telex&display=swap" rel="stylesheet">
+  <link href="../styles/main.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+  <a name="top"></a>
+  <div class="page-container">
+    <header>
+      <h1 id="header-heading">blog: CSS Positioning</h1>
+    </header>
+    <nav>
+      <ul>
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="#">Blog</a>
+          <ul class="dropdown">
+            <li><a href="blog-css-positioning.html">CSS Positioning</a></li>
+            <li><a href="identity-values.html">Identity & Values</a></li>
+            <li><a href="learning-plan.html">Learning Plan</a></li>
+            <li><a href="emotional-intelligence.html">Emotional Intelligence</a></li>
+            <li><a href="javascript-dom.html">JavaScript & the DOM</a></li>
+            <li><a href="neuroplasticity.html">Neuroplasticity & Mindset</a></li>
+          </ul>
+        </li>
+        <!--Hide until there is content 
+        <li><a href="#">Projects</a></li> -->
+      </ul>
+    </nav>
+    <div class="main-container">
+      <section>
+        <h1>CSS positioning - what's the difference?</h1>
+        <h2><em>Relative, absolute and fixed positioning.</em></h2>
+        <h5>15 November 2021</h5>
+  
+        <p>
+          When setting the position of an html element, class or id in CSS you are telling the browser how to place that item visually on the web page. There are six values that the position property can have: static (default), relative, absolute, fixed, sticky and inherit. The static value is the default position for an element and will keep it in the normal flow of the page, any further settings of position added in CSS will have no effect. Often when creating a web page you want to place an element in a specific position or have it move within a responsive web page in a relative position, this is when the position value needs to be set.
+        </p>
+        <p>
+          It is important to note that setting position usually relates to the parent container of the element you are positioning. Only in the case of fixed positioning is the position related to viewport or the browser window. This means you can set the position of a parent element (outer container) as relative and then set the position of the child element (inside the container) to absolute based on the relative position of the parent element. You could think of these element containers a bit like Russian nesting dolls where you have dolls of decreasing size placed one inside another. You could also have several dolls next to each other placed inside a toy box. In this example the toy box then becomes the parent container. The parent container needs to have a set position other than static for the absolute value to not use the page as the container. Confused yet? I am so let's see if we can unpack this...
+        </p>
+        <div class="gallery-container">
+          <div class="blog-post-gallery">
+            <img src="../images/css-positioning/css-static-position-diagram.png" alt="diagram of static position in css">
           </div>
-        </section>
-        <section>
-          <p>First up let's look at the <span class="bold-caps">relative position</span>. The term 'relative' actually relates to the elements original position in the flow of the web page or parent element and lets you move it from this by setting values. You would use this setting to move an element from where it would normally appear in the flow but its position is still affected by the elements surrounding it like a static element. This position also allows you to set a z-index value which means you can move it in front or or behind other elements.</p>
-          <h2><em>position: relative;</em></h2>
-          <p>Below is an element with position value set to relative; is has been moved 50px to the left of its realtive position which would have been inline with the left edge of this text:</p>
-          <div class="relative">
-            This div element has position: relative;
+          <div class="blog-post-gallery">
+            <img src="../images/css-positioning/css-relative-position-diagram.png" alt="diagram of relative position in css">
           </div>
-          <p>To set this position the following code is used in CSS*:</p>
-          <div class="display-code">
-            <pre>
-              <code>
+          <div class="blog-post-gallery">
+            <img src="../images/css-positioning/css-absolute-position-diagram.png" alt="diagram of absolute position in css">
+          </div>
+          <div class="blog-post-gallery">
+            <img src="../images/css-positioning/css-fixed-position-diagram.png" alt="diagram of fixed position in css">
+          </div>
+        </div>
+      </section>
+      <section>
+        <p>
+          First up let's look at the <span class="bold-caps">relative position</span>. The term 'relative' actually relates to the elements original position in the flow of the web page or parent element and lets you move it from this by setting values. You would use this setting to move an element from where it would normally appear in the flow but its position is still affected by the elements surrounding it like a static element. This position also allows you to set a z-index value which means you can move it in front or or behind other elements.
+        </p>
+        <h2><em>position: relative;</em></h2>
+        <p>
+          Below is an element with position value set to relative; is has been moved 50px to the left of its realtive position which would have been inline with the left edge of this text:
+        </p>
+        <div class="relative">
+          This div element has position: relative;
+        </div>
+        <p>
+          To set this position the following code is used in CSS*:
+        </p>
+        <div class="display-code">
+          <pre>
+            <code>
 div .relative {
   position: relative;
   left: 50px;
   }
-              </code>
-            </pre>
+            </code>
+          </pre>
+        </div>
+        <p class="small-note">
+          <em>*Please note the other styling of the div elements has been ommited from this code.</em>
+        </p>
+        <p>
+          <span class="bold-caps">Absolute position</span> means you remove the element from the flow and set its position based on the parent element or web page and it will not affect other elements surrounding it and they won't affect its positioning. Basically the element has a set position and all the other elements will ignore it. You can also set the z-index of this position.
+        </p>
+        <h2><em>position: absolute;</em></h2>
+        <p>
+          Below is an element with position value set to relative; is has been moved 50px to the left of its realtive position which would have been inline with the left edge of this text:
+        </p>
+        <div class="relative">This div element has position: relative;
+          <div class="absolute">This div element has position: absolute;          
           </div>
-          <p class="small-note"><em>*Please note the other styling of the div elements has been ommited from this code.</em></p>
-
-          <p><span class="bold-caps">Absolute position</span> means you remove the element from the flow and set its position based on the parent element or web page and it will not affect other elements surrounding it and they won't affect its positioning. Basically the element has a set position and all the other elements will ignore it. You can also set the z-index of this position.</p>
-          <h2><em>position: absolute;</em></h2>
-          <p>Below is an element with position value set to relative; is has been moved 50px to the left of its realtive position which would have been inline with the left edge of this text:</p>
-          <div class="relative">This div element has position: relative;
-            <div class="absolute">This div element has position: absolute;</div>
-          </div>
-          <p>To set this position the following code is used in CSS*:</p>
-          <div class="display-code">
-            <pre>
-              <code>
+        </div>
+        <p>
+          To set this position the following code is used in CSS*:
+        </p>
+        <div class="display-code">
+          <pre>
+            <code>
 div .relative {
   position: relative;
   left: 50px;
@@ -96,46 +114,62 @@ div .absolute {
   bottom: 0;
   right: 0;
   }
-              </code>
-            </pre>
-          </div>
-          <p class="small-note"><em>*Please note the other styling of the div elements has been ommited from this code.</em></p>
-          <p>A <span class="bold-caps">fixed position</span> element is fixed to the web browser window or viewport. This means that as you scroll through the web page this element stays locked in place. Often used for a navigation bar you want to stay visible or a footer you want at the bottom of the page. The tricky thing with fixed position elements is that they can overlap other elements and you have to allow space to prevent this from happening if you don't like the layout.</p>
-          <h2><em>position: fixed;</em></h2>
-          <p>In the bottom corner of this webpage is a fixed element. You may have noticed it as you have been scrolling through this post.</p>
-          <div class="fixed">
-            This div element has position: fixed;
-          </div>
-          <p>To set this position the following code is used in CSS*:</p>
-          <div class="display-code">
-            <pre>
-              <code>
+            </code>
+          </pre>
+        </div>
+        <p class="small-note">
+          <em>*Please note the other styling of the div elements has been ommited from this code.</em>
+        </p>
+        <p>
+          A <span class="bold-caps">fixed position</span> element is fixed to the web browser window or viewport. This means that as you scroll through the web page this element stays locked in place. Often used for a navigation bar you want to stay visible or a footer you want at the bottom of the page. The tricky thing with fixed position elements is that they can overlap other elements and you have to allow space to prevent this from happening if you don't like the layout.
+        </p>
+        <h2><em>position: fixed;</em></h2>
+        <p>
+          In the bottom corner of this webpage is a fixed element. You may have noticed it as you have been scrolling through this post.
+        </p>
+        <div class="fixed">
+          This div element has position: fixed;
+        </div>
+        <p>
+          To set this position the following code is used in CSS*:
+        </p>
+        <div class="display-code">
+          <pre>
+            <code>
 div .fixed {
   position: fixed;
   bottom: 0;
   right: 0;
   }
-              </code>
-            </pre>
-          </div>
-          <p class="small-note"><em>*Please note the other styling of the div elements has been ommited from this code.</em></p>
-          <p><span class="bold-caps">Sticky position</span> is a combination of both a static position and a fixed position. Often the element will have a parent element with another element above it and as you scroll down the previous element disappears and the sticky element then gets stuck in a fixed position. You often see it used for navigation which has a header above. It is important to note that this is an experimental value which means that is is not supported by all the major browsers.</p>
-          <p>The position value doesn't cascade (not inherited from the parent element) so the <span class="bold-caps">inherit position</span> value forces the value to be inherited from the parent.</p>
-          <p>And that is all I have on using the positioning values in CSS to move elements around the page. If you are looking for some more technical resources you can check out the following websites which helped to teach me about these values:</p>
-            <ul class="external-link">
-              <li><a href="https://www.w3schools.com/css/css_positioning.asp" target="_blank"><strong>W3Schools: CSS Layout - The position Property</strong></a></li>
-              <li><a href="https://css-tricks.com/absolute-relative-fixed-positioining-how-do-they-differ/" target="_blank"><strong>CSS-Tricks: Absolute, Relative, Fixed Positioning: How Do They Differ?</strong></a></li>
-            </ul>
-
-        </section>
-        <a href="#top" class="top-btn">^Back to Top^</a>  
-        <!-- this is a comment. -->
-      </div>
-
-      <footer>
-        <p class="footer-text">Copyright © 2021 Krissy Le Geyt</p>
-      </footer>
-    
+            </code>
+          </pre>
+        </div>
+        <p class="small-note">
+          <em>*Please note the other styling of the div elements has been ommited from this code.</em>
+        </p>
+        <p>
+          <span class="bold-caps">Sticky position</span> is a combination of both a static position and a fixed position. Often the element will have a parent element with another element above it and as you scroll down the previous element disappears and the sticky element then gets stuck in a fixed position. You often see it used for navigation which has a header above. It is important to note that this is an experimental value which means that is is not supported by all the major browsers.
+        </p>
+        <p>
+          The position value doesn't cascade (not inherited from the parent element) so the <span class="bold-caps">inherit position</span> value forces the value to be inherited from the parent.
+        </p>
+        <p>
+          And that is all I have on using the positioning values in CSS to move elements around the page. If you are looking for some more technical resources you can check out the following websites which helped to teach me about these values:
+        </p>
+        <ul class="external-link">
+          <li><a href="https://www.w3schools.com/css/css_positioning.asp" target="_blank"><strong>W3Schools: CSS Layout - The position Property</strong></a></li>
+          <li><a href="https://css-tricks.com/absolute-relative-fixed-positioining-how-do-they-differ/" target="_blank"><strong>CSS-Tricks: Absolute, Relative, Fixed Positioning: How Do They Differ?</strong></a></li>
+        </ul>
+      </section>
+      <a href="#top" class="top-btn">^Back to Top^</a>  
     </div>
-  </body>
+
+    <footer>
+      <p class="footer-text">
+        Copyright © 2021 Krissy Le Geyt
+      </p>
+    </footer>
+  
+  </div>
+</body>
 </html>

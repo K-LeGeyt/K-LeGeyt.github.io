@@ -173,6 +173,9 @@ body ul.external-link {
     margin-bottom: 2em;
 }
 
+body ul.external-link li > a:after { content: ''; }
+
+
 body a,
 body li a {
     font-family: 'Telex', sans-serif;

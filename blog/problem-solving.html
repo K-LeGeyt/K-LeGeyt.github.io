@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Blog | Problem Solving</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">    
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@1,600&family=Fira+Sans:wght@600&family=Telex&display=swap" rel="stylesheet">
+  <link href="../styles/main.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+  <a name="top"></a>
+  <div class="page-container">
+    <header>
+      <h1 id="header-heading">blog: Problem Solving</h1>
+    </header>
+    <nav>
+      <ul>
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="#">Blog</a>
+          <ul class="dropdown">
+            <li style="color: darkgrey; font-size: 16px;" !important>Technical»</li>
+            <li><a href="blog-css-positioning.html">CSS Positioning</a></li>
+            <li><a href="javascript-dom.html">JavaScript & the DOM</a></li>
+            <li><a href="problem-solving.html">Problem Solving</a></li>
+            <li style="color: darkgrey; font-size: 16px;" !important>Cultural»</li>
+            <li><a href="identity-values.html">Identity & Values</a></li>
+            <li><a href="learning-plan.html">Learning Plan</a></li>
+            <li><a href="emotional-intelligence.html">Emotional Intelligence</a></li>
+            <li><a href="neuroplasticity.html">Neuroplasticity & Mindset</a></li>
+          </ul>
+        </li>
+      </ul>
+    </nav>
+
+    <div class="main-container">
+      <section>
+        <h1>Problem Solving</h1>
+        <h2><em>What is my approach to problem solving?</em></h2>
+        <h5>01 December 2021</h5>
+        <div class="fig-container">
+          <figure>
+              <img src="../images/problem-solving/problem-solving-dots-totals.jpg" alt="javascript code on computer screen" id="prob-solv-img">
+          </figure>
+        </div>
+        <p>
+          <strong>When I was blocked on a simple problem and how I solved it in an elegant way.</strong>
+          <br>Early on in my JavaScript journey I needed to complete a function that would update a display counter 
+          on a page which counted how many coloured dots were being created by a user interacting with them.
+        </p> 
+        <p> 
+          To solve the problem we were given a few clues as to what we need to google and also a link to some documentation on the web which would help. At first glance there was a little bit of panic after not completely understanding how to apply the information we were led to and I definitely had to take a break to digest all that I had read.
+        </p>
+        <p>  
+          The next step was to console log (print it to the screen) what I would get when trying different things. By using the <a href="https://developer.mozilla.org/en-US/docs/Web/API/Document/getElementsByClassName" target="_blank">getElementsByClassName</a> method of document interface which was suggested I realised that I was getting the complete array of elements that had a certain colour profile and I needed to access just the length of that array. A quick google found the <a href="https://www.freecodecamp.org/news/javascript-array-length/" target="_blank">.length property</a> would work and I added that to then end of my method.
+        </p> 
+        <p> 
+          The last step was to then assign each colour to its corresponding totals value in an object variable that had been created for us. At first I was unsure how to do this and talked out loud about it to my husband (who was my stand in rubber ducky - see methods below). This led me to google assigning <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Working_with_Objects" target="_blank">object property values</a> and I found a handy dot notation for that. I was then able to assign the value of my array length for each colour directly to the corresponding property in a tidy 3 lines of code. No extra variables were created in this process, which seemed to be the solution I was seeing discussed by others, so if felt like it was a problem solved in a somewhat elegant way. 
+        </p> 
+        <p>
+          <strong>What did I learn?</strong>
+          <br>That sometimes stepping away and taking a break can be the best thing to give you a fresh perspective when tackling something new. Then working through step by step and seeing what you get at each stage is the best way to see how you are progressing. Talking at someone can be just as useful as asking for help as by having to put into words what you are wanting to do you can sometimes figure what you need yourself. And finally, I don't know what I would do without google.
+        </p>
+        <p>
+          <strong>Problem solving techniques and process:
+            <br>(and how confident I feel using them)
+          </strong>
+        </p>
+        <p>
+            <strong>Pseudocode</strong> - When starting out writing a piece of code it can be good to write out in plain English the steps that you need to take in order to map out what you will need to do. It can be very useful for breaking down complicated problems into smaller more manageable steps. Pseudocode can be left as comments in code which are useful for other developers who may work on the code later. I have used pseudocode quite a bit when working out code steps and tend to use it in conjunction with trying something and console logging to see if I am getting a particular step right.
+        </p>
+        <p>
+            <strong>Trying something</strong> - Just as it says, try something, try anything! I do this all the time and it is usually after googling and finding something that I think could work. Once again I usually need to console log at this point.
+        </p>
+        <p>
+            <strong>Rubber ducky method</strong> - When you are explaining what you are are trying to do next or what is not currently working to someone you often realise what you need to do in order to fix it. If you keep doing this to a co-worker (or husband in my case as we are currently in lockdown due to the Covid-19 pandemic) you are taking up their time. This is where the rubber ducky can be a substitute for that person. Below is a video all about this or you can check out this fun website: <a href="https://rubberduckdebugging.com/" target="_blank">Rubber Duck Debugging</a>.
+        </p>
+        <div class="emd-vid">
+            <iframe class="responsive-iframe" src="https://www.youtube.com/embed/huOPVqztPdc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+        <p>
+            <strong>Reading error messages</strong> - This is great for solving small issues where the error message spells out where you went wrong. There  is a rogue curly bracket or a typo so you can clearly read what is missing. Sometimes the error message isn't very clear and that is when I need to resort to one of the other methods.
+        </p>
+        <p>
+            <strong>Console.logging</strong> - By using the console.log() method you can output to the console what you are working on by putting it between the brackets. You could run a function to do something to an object and then use console log to look at how that object has been changed. I use this often and it helps me to see where I am in each of the steps I am taking to try and create my piece of code.
+        </p>
+        <p>
+            <strong>Googling</strong> - How did we all survive before we could google! Not just useful for solving arguments or answering 9 year olds questions about things on this planet, google is a great way to search for answers to code issues. This can often be my next step after pseudocode.
+        </p>
+        <p>
+            <strong>Asking your peers for help</strong> - Particularly helpful when you are all working on the same projects as someone can usually look at the code you have and see where you may be going wrong and point you in the right direction. This has come in handy in my JavaScript journey so far.
+        </p>
+        <p>
+            <strong>Asking coaches for help</strong> - There are a couple who monitor the slack channels that help when you are really stuck and even your peers can't untangle you. Which can be very important when I am completely lost. Often someone else has had the same issue and you only need to look over what the facilitator suggested to put you on the right path.
+        </p>
+        <p>
+            <strong>Improving your process with reflection</strong> - When looking back over your code or even thinking about your code later on once it is all complete can help you move some of your new knowledge from the short term memory banks into long term storage. If you are trying to help someone else it also becomes part of this reflection as you are explaining what worked for you and to do that you reflect on your own process and have to fully comprehend what you did to be able to explain it to someone else. 
+        </p>
+      </section>
+      <br><a href="#top" class="top-btn">^Back to Top^</a>  
+    </div>
+
+    <footer>
+      <p class="footer-text">Copyright © 2021 Krissy Le Geyt</p>
+    </footer>
+  
+  </div>
+</body>
+</html>

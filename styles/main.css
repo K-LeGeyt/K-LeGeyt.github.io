@@ -367,9 +367,37 @@ figcaption, figcaption a {
 }
 
 .small-note {
-      font-family: 'Cormorant', cursive;
-      font-size: 14px;
-      margin-bottom: 30px;
+    font-family: 'Cormorant', cursive;
+    font-size: 14px;
+    margin-bottom: 30px;
+}
+
+.emd-vid {
+    position: relative;
+    overflow: hidden;
+    width: 560px; 
+    height: 315px;
+    margin: 0 auto;
+}
+
+@media screen and (max-width: 600px) {
+    .emd-vid {
+        position: relative;
+        overflow: hidden;
+        width: 100%;
+        height: auto;
+        padding-top: 56.25%; /* 16:9 Aspect Ratio (divide 9 by 16 = 0.5625) */
+    }
+
+}
+.responsive-iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
 }
 
 #desk-img {
@@ -409,6 +437,13 @@ figcaption, figcaption a {
     max-width: 400px;
     height: auto;
     margin-top: 20px;
+}
+
+#prob-solv-img {
+    width: 100%;
+    max-width: 800px;
+    height: auto;
+    margin: 20px 0px 5px 0px;
 }
 
 /* Footer Styling */

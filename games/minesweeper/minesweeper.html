@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Games | Minesweeper</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@1,600&family=Fira+Sans:wght@600&family=Telex&display=swap" rel="stylesheet">
+  <link href="../../styles/main.css" rel="stylesheet" type="text/css">
+  
+<!-- need to remove 
+  <link rel="stylesheet" href="minesweeper.css"> -->
+
+  <script src="lib/tests.js"></script>
+  <script src="lib/lib.js"></script>
+  <script src="minesweeper.js"></script>
+</head>
+<body>
+  <div class="page-container">
+    <header>
+      <h1 id="header-heading">games: Minesweeper</h1>
+    </header>
+    <nav>
+      <ul>
+        <li><a href="../../index.html">Home</a></li>
+        <li><a href="#">Blog</a>
+          <ul class="dropdown">
+            <li style="color: darkgrey; font-size: 16px;" !important>Technical»</li>
+            <li><a href="../../blog/blog-css-positioning.html">CSS Positioning</a></li>
+            <li><a href="../../blog/javascript-dom.html">JavaScript & the DOM</a></li>
+            <li><a href="../../blog/problem-solving.html">Problem Solving</a></li>
+            <li style="color: darkgrey; font-size: 16px;" !important>Cultural»</li>
+            <li><a href="../../blog/identity-values.html">Identity & Values</a></li>
+            <li><a href="../../blog/learning-plan.html">Learning Plan</a></li>
+            <li><a href="../../blog/emotional-intelligence.html">Emotional Intelligence</a></li>
+            <li><a href="../../blog/neuroplasticity.html">Neuroplasticity & Mindset</a></li>
+            <li><a href="../../blog/foundations-reflection.html">Foundations Reflection</a></li>
+          </ul>
+        </li>
+      </ul>
+    </nav>
+    <div class="main-container">
+      <div class="game-wrapper">
+        <div id="message"></div>
+        <div id="notes"></div>
+        <div id="gameboard" class="board"></div>
+        <div>
+          <p class="display" id="won">Games Won: 0</p>
+            <select id="mineNum">
+              <option value = 4>EASY</option>
+              <option value = 8 selected>MEDIUM</option>
+              <option value = 12>HARD</option>
+            </select>
+          <button id="reset" type="button">RESET</button>
+          <p class="display" id="lost">Games Lost: 0</p>
+        </div>
+      </div>
+      <h4>Instructions:</h4>  
+      <p>
+        <strong>Mouse Left-click: </strong>Use the left click button on the mouse to reveal the square.
+        <br>Clicking a square which doesn't have a bomb reveals the number of neighbouring squares containing bombs.
+      </p>
+      <p>
+        <strong>Mouse Right-click: </strong>If you think a square contains a bomb use the right click button on your mouse to mark is as a mine.
+      </p>
+      <p>
+        If you click on a square containing a bomb, you lose. If you manage to click all the squares (without clicking on any bombs) you win.
+      </p>
+    </div>
+
+  </div>
+  </body>
+</html>

@@ -462,24 +462,24 @@ figcaption, figcaption a {
     justify-content: flex-center;
     flex-direction: column;
     font-family: 'Open Sans', sans-serif;
-  }
+}
   
-  #message, #notes {
+#message, #notes {
     display: flex;
     flex-direction: column;
     align-items: center;
-  }
+}
   
-  #message {
+#message {
     font-size: 1.5rem;
-  }
+}
   
-  .board {
+.board {
     display: flex;
     flex-wrap: wrap;
-  }
+}
   
-  .board div {
+.board div {
     color: #7ac943;
     font-size: 2rem;
     width: 75px;
@@ -491,29 +491,29 @@ figcaption, figcaption a {
     display: flex;
     align-items: center;
     justify-content: center;
-  }
+}
   
-  .board div:hover {
+.board div:hover {
     background-color: white;
-  }
+}
   
-  div.mine, div.mine:hover {
+div.mine, div.mine:hover {
     background: no-repeat center/60% url("../games/minesweeper/images/bomb.svg") #ff931e;
-  }
+}
   
-  div.hidden {
+div.hidden {
     background: #eee;
-  }
+}
   
-  div.hidden:hover {
+div.hidden:hover {
     background: #ccc;
-  }
+}
   
-  div.marked, div.marked:hover {
+div.marked, div.marked:hover {
     background: no-repeat center/60% url("../games/minesweeper/images/mark.svg") #3fa9f5;
-  }
+}
   
-  button {
+button {
     background-color: #ff7bac;
     margin: 1rem;
     border-radius: 8px;  
@@ -524,8 +524,9 @@ figcaption, figcaption a {
     text-decoration: none;
     display: inline-block;
     font-size: 16px;
-  }
-  select {
+}
+
+select {
     background-color: #ff7bac;
     margin: 0 0 1rem 1rem;
     border-radius: 8px;  
@@ -536,11 +537,11 @@ figcaption, figcaption a {
     text-decoration: none;
     display: inline-block;
     font-size: 16px;
-  }
+}
   
-  .display {
+.display {
     display: inline-block;
-  }
+}
 
 /* Footer Styling */
 footer {

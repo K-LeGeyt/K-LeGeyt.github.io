@@ -498,7 +498,7 @@ figcaption, figcaption a {
   }
   
   div.mine, div.mine:hover {
-    background: no-repeat center/60% url("images/bomb.svg") #ff931e;
+    background: no-repeat center/60% url("../games/minesweeper/images/bomb.svg") #ff931e;
   }
   
   div.hidden {
@@ -510,7 +510,7 @@ figcaption, figcaption a {
   }
   
   div.marked, div.marked:hover {
-    background: no-repeat center/60% url("images/mark.svg") #3fa9f5;
+    background: no-repeat center/60% url("../games/minesweeper/images/mark.svg") #3fa9f5;
   }
   
   button {
